@@ -3,6 +3,7 @@ package com.example.lzp.updatelistview;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                     LinearLayout linearLayout = (LinearLayout) listView.getAdapter().getView(i,null,null);
                     Button button = (Button) linearLayout.getChildAt(0);
 //                    button.setBackgroundDrawable(getResources().getColor(R.color.colorPrimary));
+                    Log.d("text", button.getText().toString());
                     button.setText("睡觉");
                 }
 
